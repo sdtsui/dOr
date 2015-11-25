@@ -21,6 +21,9 @@ Use npm and browserify. (to be completed)
 
   //attaches a listener, throttling the callback at 500ms
   dOr_handler.onTilt(function(dOr_data){…}, 500);
+
+  //returns the most recent dOr_data object (see below)
+  dOr_handler.getMostRecentEvent();
 ```
 
 The dOr object will add a `deviceOrientation` listener to `DOM_document`. If the corresponding optional paramater was passed, the callback function will be throttled.
