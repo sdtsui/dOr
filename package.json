@@ -19,13 +19,20 @@
     "url": "https://github.com/sdtsui/dOr/issues"
   },
   "homepage": "https://github.com/sdtsui/dOr#readme",
-  "dependencies" : {
-    "underscore" : "*"
+  "dependencies": {
+    "underscore": "*"
   },
-  "devDependencies" : {
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.1.18",
     "babelify": "^6.1.3",
     "browserify": "^11.0.1",
     "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
     "gulp-sourcemaps": "^1.5.2",
     "nodemon": "^1.4.0",
     "vinyl-buffer": "^1.0.0",

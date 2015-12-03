@@ -5,6 +5,7 @@ var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var babel = require('babelify');
+var gulp_babel = require('gulp-babel');
 
 function compile(watch) {
   var bundler = watchify(browserify('./src/testsrc.js', { debug: true }).transform(babel));
@@ -35,5 +36,13 @@ function watch() {
 
 gulp.task('build', function() { return compile(); });
 gulp.task('watch', function() { return watch(); });
+gulp.task('buildToNpm', function () {
+  return gulp.src("src/dOr.js")
+    .pipe(gulp_babel())
+    .pipe(gulp.dest('dist'));
+});
+
 
 gulp.task('default', ['watch']);
+
+
