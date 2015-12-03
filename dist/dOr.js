@@ -1,5 +1,6 @@
 'use strict';
 
+//Could rewrite throttle.
 var _ = require('underscore');
 
 var dOr = function dOr() {
@@ -38,7 +39,6 @@ var dOr = function dOr() {
         beta: event.beta
       };
       addReading(reading);
-      // debugger;
       this.updateData(event);
       _callbacks.forEach(function (cb) {
         cb(_dOr_data);
@@ -47,7 +47,6 @@ var dOr = function dOr() {
     rootListener = _.throttle(rootListener, _throttleInterval);
 
     if (_document.DeviceOrientationEvent) {
-      // debugger;
       _document.addEventListener("deviceorientation", rootListener.bind(this), true);
     };
 

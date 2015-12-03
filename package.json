@@ -1,8 +1,8 @@
 {
   "name": "dor",
   "version": "0.0.1",
-  "description": "-",
-  "main": "dOr.js",
+  "description": "dOr",
+  "main": "./src/dOr.js",
   "directories": {
     "test": "test"
   },
