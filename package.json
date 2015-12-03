@@ -1,19 +1,13 @@
 {
   "name": "dor",
   "version": "0.0.2",
-  "description": "dOr",
+  "description": "dor",
   "main": "./src/dOr.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sdtsui/dOr.git"
   },
-  "author": "",
+  "author": "sdtsui",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sdtsui/dOr/issues"
