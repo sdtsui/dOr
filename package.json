@@ -1,0 +1,35 @@
+{
+  "name": "dor",
+  "version": "0.0.1",
+  "description": "-",
+  "main": "dOr.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdtsui/dOr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdtsui/dOr/issues"
+  },
+  "homepage": "https://github.com/sdtsui/dOr#readme",
+  "dependencies" : {
+    "underscore" : "*"
+  },
+  "devDependencies" : {
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "nodemon": "^1.4.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
+  }
+}
