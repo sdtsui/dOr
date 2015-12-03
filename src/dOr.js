@@ -33,6 +33,7 @@ let dOr = (function(
           beta: event.beta
       };
       addReading(reading);
+      // debugger;
       this.updateData(event);
       _callbacks.forEach((cb) => {
         cb(_dOr_data);
@@ -41,7 +42,8 @@ let dOr = (function(
     rootListener = _.throttle(rootListener, _throttleInterval);
 
     if (_document.DeviceOrientationEvent) {
-        _document.addEventListener("deviceorientation", rootListener, true);
+      // debugger;
+        _document.addEventListener("deviceorientation", rootListener.bind(this), true);
     };
 
     /**
