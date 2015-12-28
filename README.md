@@ -12,7 +12,7 @@
 Use npm and browserify. (to be completed)
 
   Instantiate dOr as follows:
-```
+```js
   //instantiates a handler object, 10 will be the 'window' size, instead of a default of 5
   let dOr_handler = dOr(10); 
 
